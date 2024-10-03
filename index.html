@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .header-bg {
+        background-size: cover;
+    }
+    .products-bg {
+        background-size: cover;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets (min-width: 769px) and (max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-bg {
+        background-size: cover;
+    }
+    .products-bg {
+        background-size: cover;
+    }
+}
+
+/* Desktop devices (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+    .header-bg {
+        background-size: cover;
+    }
+    .products-bg {
+        background-size: cover;
+    }
+    .products-grid {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+    .products-grid::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}
+
+.header-bg {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080') no-repeat center center;
+    background-size: cover;
+}
+
+.products-bg {
+    background: linear-gradient(to right, #d4af37, #000000);
+    background-size: cover;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+    </style>
+</head>
+<body class="text-white">
+    <header class="header-bg text-white py-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <div class="flex items-center mb-4 md:mb-0">
+<div class="h-12 w-12 bg-gray-300">
+    <img src="https://via.placeholder.com/48" alt="Placeholder Image" width="48" height="48">
+</div>
+
+                <div class="ml-4">
+                    <p class="text-sm">
+                        A Premier Company in the Packaging Industry
+                    </p>
+                    <p class="text-xs">
+                        Plot no. A-56/57, Additional MIDC, Harangul, LATUR 413612 Maharashtra
+                    </p>
+                </div>
+            </div>
+            <nav class="flex items-center space-x-6">
+                <a class="text-white hover:text-gray-300" href="index.html">
+                    Home
+                </a>
+                <a class="text-white hover:text-gray-300" href="about.html">
+                    About Us
+                </a>
+                <a class="text-white hover:text-gray-300" href="product.html">
+                    Products
+                </a>
+                <a class="text-white hover:text-gray-300" href="industry.html">
+                    Industries Served
+                </a>
+                <a class="text-white hover:text-gray-300" href="#">
+                    <i class="fas fa-search">
+                    </i>
+                </a>
+            </nav>
+        </div>
+        <div class="container mx-auto text-center py-20 px-4">
+            <h1 class="text-2xl md:text-4xl font-bold">
+                Innovative and Sustainable packaging Solutions
+            </h1>
+            <p class="mt-4 text-sm md:text-base">
+                Delivering High-Quality, Eco-Friendly Packaging For Diverse Industries
+            </p>
+            <p class="mt-2 font-bold text-sm md:text-base">
+                MANUFACTURER OF P.P. | HDPE | BOPP | LENO BAGS
+            </p>
+            <button class="mt-6 px-6 py-2 bg-black text-white rounded-full">
+                Contact Us
+            </button>
+        </div>
+    </header>
+<section class="products-bg text-black py-8">
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-2xl md:text-3xl font-bold">
+            OUR PRODUCTS :
+        </h2>
+        <div class="products-grid mt-8">
+<div class="product bg-white p-4 shadow-lg">
+    <img src="https://via.placeholder.com/100x100" alt="Placeholder Image" class="w-full h-48 bg-gray-300">
+</div>
+<div class="product bg-white p-4 shadow-lg">
+    <img src="https://via.placeholder.com/100x100" alt="Placeholder Image" class="w-full h-48 bg-gray-300">
+</div>
+<div class="product bg-white p-4 shadow-lg">
+    <img src="https://via.placeholder.com/100x100" alt="Placeholder Image" class="w-full h-48 bg-gray-300">
+</div>
+<div class="product bg-white p-4 shadow-lg">
+    <img src="https://via.placeholder.com/100x100" alt="Placeholder Image" class="w-full h-48 bg-gray-300">
+</div>
+<div class="product bg-white p-4 shadow-lg">
+    <img src="https://via.placeholder.com/100x100" alt="Placeholder Image" class="w-full h-48 bg-gray-300">
+</div>
+<div class="product bg-white p-4 shadow-lg">
+    <img src="https://via.placeholder.com/100x100" alt="Placeholder Image" class="w-full h-48 bg-gray-300">
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      <div class="flex flex-col items-center">
+   <!-- About Us Section -->
+   <div class="w-full flex flex-col md:flex-row">
+    <div class="w-full md:w-1/2 bg-yellow-500 p-8 relative">
+     <div class="absolute top-0 left-0 w-1/2 h-full bg-yellow-600 rounded-full transform -translate-x-1/2 z-0">
+     </div>
+     <h2 class="text-3xl font-bold mb-4 relative z-10">
+      About Us
+     </h2>
+     <p class="text-lg mb-4 relative z-10">
+      DESHMUKH POLYPACKS, founded in 2024, is a premier company in the Packaging Industry, specializing in the production of polypropylene (PP) woven bags and other sustainable packaging solutions.
+     </p>
+     <div class="flex justify-end relative z-10">
+     <a href="about.html">
+      <button class="bg-black text-white py-2 px-4 rounded">
+       Read More
+      </button>
+      </a>
+     </div>
+    </div>
+    <div class="w-full md:w-1/2 bg-gray-800 flex items-center justify-center p-8">
+     <img alt="Placeholder Image" class="w-1/2" height="200" src="https://placehold.co/200x200?text=Logo" width="200"/>
+    </div>
+   </div>
+   <!-- Contact Form Section -->
+   <div class="w-full p-8 bg-cover bg-center" style="background-image: url('https://placehold.co/800x400?text=Background');">
+    <h2 class="text-2xl font-bold text-center mb-4">
+     Tell Us What Are You Looking For ?
+    </h2>
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+     <div class="mb-4">
+      <label class="block mb-2" for="requirements">
+       <i class="fas fa-pen">
+       </i>
+       Describe your requirements
+      </label>
+      <textarea class="w-full p-4 rounded bg-white text-black" id="requirements" placeholder="Describe your requirements" rows="4"></textarea>
+     </div>
+     <div class="flex flex-col md:flex-row mb-4">
+      <div class="w-full md:w-1/2 md:pr-2 mb-4md:mb-0">
+       <label class="block mb-2" for="contact">
+        <i class="fas fa-phone">
+        </i>
+        Enter your Contact No.
+       </label>
+       <div class="flex">
+        <span class="bg-gray-700 text-white py-2 px-4 rounded-l">
+         +91
+        </span>
+        <input class="w-full p-4 rounded-r bg-gray-700 text-white" id="contact" placeholder="Enter your Contact No." type="text"/>
+       </div>
+      </div>
+      <div class="w-full md:w-1/2 md:pl-2">
+       <label class="block mb-2" for="name">
+        Enter your name
+       </label>
+       <input class="w-full p-4 rounded bg-gray-700 text-white" id="name" placeholder="Enter your name" type="text"/>
+      </div>
+     </div>
+     <div class="text-center">
+      <button class="bg-white text-black py-2 px-8 rounded-full">
+       Send
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+<section class="bg-gray-100 py-8">
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-black">Reviews & Ratings</h1>
+            <div class="w-16 h-1 bg-yellow-500 mx-auto my-2"></div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center mt-6">
+            <div class="bg-yellow-500 text-black p-6 rounded-lg mb-4 md:mb-0" style="width: 200px;">
+                <div class="text-4xl font-bold text-black">4.0<span class="text-2xl">/5</span></div>
+                <div class="text-sm text-black">Reviewed by 50 users</div>
+            </div>
+            <div class="flex items-center">
+                <div class="bg-green-500 text-white p-2 rounded-full mr-2">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="text-lg font-bold text-black">User Response</div>
+            </div>
+        </div>
+        <div class="mt-8 flex justify-end">
+            <div class="w-full md:w-1/2">
+                <div class="flex justify-between items-center">
+                    <div class="text-lg text-black">Quality</div>
+                    <div class="w-2/3 bg-gray-300 rounded-full h-2.5">
+                        <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="text-lg text-black">Delivery</div>
+                    <div class="w-2/3 bg-gray-300 rounded-full h-2.5">
+                        <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="text-lg text-black">Response</div>
+                    <div class="w-2/3 bg-gray-300 rounded-full h-2.5">
+                        <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-500 my-6"></div>
+        <div class="text-lg font-bold text-black">Reviews</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+            <div class="text-center text-black">
+                <div class="font-bold">Arindam Dutta</div>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div>Response</div>
+            </div>
+            <div class="text-center text-black">
+                <div class="font-bold">Arindam Dutta</div>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div>Response</div>
+            </div>
+            <div class="text-center text-black">
+                <div class="font-bold">Arindam Dutta</div>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div>Response</div>
+            </div>
+            <div class="text-center text-black">
+                <div class="font-bold">Arindam Dutta</div>
+                <div class="text-yellow-500">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div>Response</div>
+            </div>
+        </div>
+        <div class="text-center mt-6">
+            <button class="bg-white text-black px-4 py-2 rounded-full flex items-center mx-auto">
+                Show more reviews <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-gradient-to-r from-black to-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 md:px-10">
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <div class="mb-8 md:mb-0">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-phone-alt text-xl mr-4"></i>
+                    <div>
+                        <h2 class="font-bold text-lg">Call Us</h2>
+                        <p>+91 86690 16262, 99606 05588</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-xl mr-4"></i>
+                    <div>
+                        <h2 class="font-bold text-lg">Email Us</h2>
+                        <p>dpp@deshmukhpolypacks.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center bg-black bg-opacity-50 p-6 rounded-lg w-full md:w-auto">
+                <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+                <h2 class="font-bold text-lg">Our Location</h2>
+                <hr class="border-t-2 border-white w-1/2 mx-auto my-2">
+                <p>Plot no. A-56/57, Additional MIDC,<br>Harangul, LATUR 413612<br>Maharashtra</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
