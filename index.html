@@ -9,28 +9,26 @@
 <body>
 <!-- Header Section -->
 <!-- Header Section -->
-<div class="bg-white-100 py-2">
-    <div class="max-w-screen-xl flex justify-center items-center mx-auto px-4">
-        <span class="text-sm text-center">Plot no. A-56/57, Additional MIDC, Harangul, LATUR 413612 Maharashtra</span>
-    </div>
-</div>
-<!--Navbar Starts-->
-<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<nav class="bg-grey border-gray-200 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="logo2.svg" class="h-8" alt="Deskmukh Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Deskmukh Polypacks</span>
+            <img src="logo.svg" alt="Deskmukh Polypacks Logo" style="height: 100px; width: 100px;" />
         </a>
-        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <div class="flex items-center space-x-6 rtl:space-x-reverse">
+            <a href="" class="text-base font-bold text-gray-500 dark:text-white"> <!-- Changed text-sm to text-base and added font-bold -->
+                Sales Inquiries (Mon-Sat, 10AM – 6PM)<br>+91-8669016262<br>+91-9960605588</a>
+        </div>
+    </div>
+</nav>
+<nav class="bg-white-50 dark:bg-gray-700">
+    <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="flex items-center justify-between"> <!-- Added justify-between -->
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="#" class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 md:dark:text-green-500 dark:bg-green-600 md:dark:bg-transparent" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
                 </li>
                 <li>
                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-green-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products
@@ -65,65 +63,60 @@
                         </ul>
                     </div>
                 </li>
+
                 <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Us</a>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Industries Served</a>
-                </li>
-                <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
                 </li>
             </ul>
+            <!-- Added button at the extreme right -->
+            <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-600 hidden md:block">Get Quote</button>
         </div>
     </div>
 </nav>
 
+
+
+
 <!-- Carousel Section Starts -->
 <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Fixed Text -->
-    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-40">
+    <!-- <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-40">
         <h2 class="text-2xl md:text-4xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg shadow-lg text-center">
             Innovative and Sustainable packaging Solutions
         </h2>
-    </div>
+    </div> -->
 
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96 shadow-lg bg-gradient-to-r from-green-200 to-green-300">
         <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="image3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+            <img src="hero.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="image2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+            <img src="hero2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="hero.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="image3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="image2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
+            <img src="hero3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-lg" alt="...">
         </div>
     </div>
 
     <!-- Slider controls -->
     <button type="button" class="absolute top-1/2 left-0 z-50 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none transform -translate-y-1/2" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-500 group-hover:bg-gray-600 group-focus:ring-4 group-focus:ring-gray-400 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
             </svg>
             <span class="sr-only">Previous</span>
         </span>
     </button>
     <button type="button" class="absolute top-1/2 right-0 z-50 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none transform -translate-y-1/2" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-500 group-hover:bg-gray-600 group-focus:ring-4 group-focus:ring-gray-400 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
             <span class="sr-only">Next</span>
@@ -132,13 +125,14 @@
 
     <!-- Slider indicators -->
     <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 bg-white rounded-full opacity-60 hover:opacity-100 transition" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 bg-white rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 bg-white rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 bg-white rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 bg-white rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        <button type="button" class="w-3 h-3 bg-gray-500 rounded-full opacity-60 hover:opacity-100 transition" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 bg-gray-500 rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 bg-gray-500 rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 bg-gray-500 rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 bg-gray-500 rounded-full opacity-60 hover:opacity-100 transition" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
     </div>
 </div>
+
 
 
 
@@ -158,36 +152,36 @@
       
       <!-- Card 1 -->
       <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-green-500 hover:ring-4 hover:ring-green-200">
-        <img class="w-full h-48 object-cover" src="p3.webp" alt="Product 1">
+        <img class="w-full h-48 object-cover" src="p1.png" alt="Product 1" style="height: 196px; width: 320px;">
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Product 1</h3>
-          <p class="text-gray-700 mb-4">This is a short description of Product 1. It's a great product for everyone.</p>
+          <h3 class="text-xl font-bold mb-2">BOPP Bags</h3>
+          <p class="text-gray-700 mb-4">BOPP Bags</p>
           <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Buy Now
+            Read More
           </button>
         </div>
       </div>
       
       <!-- Card 2 -->
       <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-green-500 hover:ring-4 hover:ring-green-200">
-        <img class="w-full h-48 object-cover" src="p5.webp" alt="Product 2">
+        <img class="w-full h-48 object-cover" src="p2.png" alt="Product 2" style="height: 196px; width: 320px;">
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Product 2</h3>
-          <p class="text-gray-700 mb-4">This is a short description of Product 2. It's a perfect choice for many.</p>
+          <h3 class="text-xl font-bold mb-2">LENO Bags</h3>
+          <p class="text-gray-700 mb-4">LENO Bags</p>
           <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Buy Now
+            Read More
           </button>
         </div>
       </div>
       
       <!-- Card 3 -->
       <div class="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-green-500 hover:ring-4 hover:ring-green-200">
-        <img class="w-full h-48 object-cover" src="p11.webp" alt="Product 3">
+        <img class="w-full h-48 object-cover" src="p3.png" alt="Product 3" style="height: 196px; width: 320px;">
         <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Product 3</h3>
-          <p class="text-gray-700 mb-4">This is a short description of Product 3. Don't miss out on this amazing product.</p>
+          <h3 class="text-xl font-bold mb-2">C-CUT Bags</h3>
+          <p class="text-gray-700 mb-4">C-CUT Bags</p>
           <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Buy Now
+            Read More
           </button>
         </div>
       </div>
@@ -197,37 +191,42 @@
 
 
 <!-- Who we are section -->
-<div class="relative container mx-auto py-12 text-center bg-white rounded-lg shadow-lg overflow-hidden">
-    <!-- Circle Background -->
-    <div class="absolute inset-0 flex items-center justify-center z-0">
-        <div class="hidden md:block w-80 h-80 bg-green-300 rounded-full opacity-30 transform scale-125"></div>
-        <div class="hidden md:block w-96 h-96 bg-green-200 rounded-full opacity-20 transform rotate-45 -translate-x-1/2 -translate-y-1/4"></div>
-        <div class="hidden md:block w-64 h-64 bg-green-400 rounded-full opacity-20 transform scale-75 translate-x-1/4 translate-y-1/3"></div>
-        <div class="hidden md:block w-48 h-48 bg-green-300 rounded-full opacity-30 transform scale-90 translate-y-1/2"></div>
-    </div>
-
-    <h2 class="text-4xl font-bold text-gray-800 z-10 mb-4">Who We Are</h2>
-    <p class="text-gray-600 z-10 mb-6 max-w-md mx-auto text-center">
-        DESHMUKH POLYPACKS, founded in 2024, is a premier company in the Packaging Industry, specializing in the production of polypropylene (PP) woven bags and other sustainable packaging solutions. The company is driven by a commitment to sustainability, customer satisfaction, and innovative product offerings.
-    </p>
-    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105 z-10">
-        Read More
-    </button>
-    
-    <!-- Green Doodles -->
-    <svg class="absolute left-0 top-0 w-full h-full z-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50 20 Q60 10, 70 20 T90 20 T110 20 T130 20" fill="none" stroke="#68D391" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="30" cy="30" r="8" fill="#48BB78" opacity="0.5"/>
+<h2 class="text-3xl font-semibold mb-6 text-center">About Us
+    <svg class="absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-3/4 h-8" viewBox="0 0 300 30" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 15 Q 15 0, 30 15 T 60 15 T 90 15 T 120 15 T 150 15 T 180 15 T 210 15 T 240 15 T 270 15 T 300 15" 
+              fill="none" stroke="#68D391" stroke-width="3" />
     </svg>
-</div>  
+</h2>
+<br>
+<div class="relative container mx-auto py-12 text-center bg-white rounded-lg shadow-lg overflow-hidden" 
+     style="background-image: url('who.png'); background-size: cover; background-position: center;">
+    <!-- Very Light Grey Tint Overlay -->
+    <div class="absolute inset-0 bg-gray-300 opacity-20"></div> <!-- Adjusted to a very light grey -->
+
+    <h2 class="text-4xl font-bold text-white z-10 mb-4">Enhance Your Packaging Solutions With Our Premium Quality Polybags!</h2>
+
+    <p class="text-white z-10 mb-6 max-w-md mx-auto text-center text-3xl"> <!-- Adjusted text size -->
+        Get in touch today.
+    </p>
+    
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105 z-10">
+        Reach Us
+    </button>
+</div>
+
+
   
 <!--Ratings and reviews-->
 <div class="container mx-auto py-12 text-center">
-    <h2 class="text-3xl font-semibold mb-6">Customer Reviews</h2>
-
+    <h2 class="text-3xl font-semibold mb-6">Client Testimonials
+        <svg class="absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-3/4 h-8" viewBox="0 0 300 30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 15 Q 15 0, 30 15 T 60 15 T 90 15 T 120 15 T 150 15 T 180 15 T 210 15 T 240 15 T 270 15 T 300 15" 
+                  fill="none" stroke="#68D391" stroke-width="3" />
+        </svg>
+    </h2>
+<br>
 <!-- Reviews Progress Bar -->
 <div class="mt-12">
-    <h4 class="text-2xl font-semibold mb-4">Summary</h4>
     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
         <!-- 5 Star -->
         <div class="flex flex-col items-center">
@@ -286,7 +285,7 @@
         <p class="text-gray-700 mb-4">
           "Amazing products! I absolutely love the quality and taste. Highly recommend!"
         </p>
-        <p class="font-bold">- Customer Name</p>
+        <p class="font-bold">-Arindam Dutta</p>
       </div>
   
       <!-- Review Card 2 -->
@@ -297,7 +296,7 @@
         <p class="text-gray-700 mb-4">
           "Great service and fast delivery! The items were packaged nicely."
         </p>
-        <p class="font-bold">- Customer Name</p>
+        <p class="font-bold">-Arindam Dutta</p>
       </div>
   
       <!-- Review Card 3 -->
@@ -308,7 +307,7 @@
         <p class="text-gray-700 mb-4">
           "Exceptional quality! Will definitely be back for more."
         </p>
-        <p class="font-bold">- Customer Name</p>
+        <p class="font-bold">-Arindam Dutta</p>
       </div>
     </div>
 </div>
@@ -334,7 +333,7 @@
             </svg>
         </h2>
         <br>
-        <p class="mt-4 text-center text-gray-500 dark:text-gray-400">Please take a moment to share your thoughts with us.</p>
+        <p class="mt-4 text-center text-gray-500 dark:text-gray-400">Please Tell Us What Are You Looking For?</p>
 
         <form class="mt-8 space-y-6">
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -370,8 +369,7 @@
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
               <a href="#" class="flex items-center">
-                  <img src="logo2.svg" class="h-8 me-3" alt="Deskmukh Logo" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Deskmukh Polypacks</span>
+                <img src="logo.svg" alt="Deskmukh Polypacks Logo" style="height: 100px; width: 100px;" />
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -379,7 +377,7 @@
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="#" class="">Call: 8669016262, 9960605588</a>
+                          <a href="#" class="">Call: +91-8669016262, +91-9960605588</a>
                       </li>
                       <br>
                       <li>
